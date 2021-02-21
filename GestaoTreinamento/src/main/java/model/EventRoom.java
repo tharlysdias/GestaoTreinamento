@@ -12,13 +12,18 @@ public class EventRoom {
     private String name;
     private int capacity;
     
-    // Criando construtor
+    // Criando construtores
     public EventRoom(int id, int idPerson, String name, int capacity) {
         this.id = id;
         this.idPerson = idPerson;
         this.name = name;
         this.capacity = capacity;
     }
+    
+    public EventRoom() {
+        
+    }
+    
     
     // Métodos de acesso
     public int getId() {

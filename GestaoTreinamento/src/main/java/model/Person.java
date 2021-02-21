@@ -1,5 +1,7 @@
 package model;
 
+import java.util.logging.Logger;
+
 /**
  *
  * @author tharlys
@@ -9,14 +11,19 @@ public class Person {
     // Atributos da pessoa (Estão privados para garantir o encapsulamento das informações de cada objeto).
     private int id;
     private String name;
-    private String lasName;
+    private String lastName;
+    private static final Logger LOG = Logger.getLogger(Person.class.getName());
     
     
     // Criando Construtor
-    public Person(int id, String name, String lasName) {
+    public Person(int id, String name, String lastName) {
         this.id = id;
         this.name = name;
-        this.lasName = lasName;
+        this.lastName = lastName;
+    }
+    
+    public Person() {
+        
     }
     
     
@@ -38,12 +45,12 @@ public class Person {
         this.name = name;
     }
 
-    public String getLasName() {
-        return lasName;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setLasName(String lasName) {
-        this.lasName = lasName;
+    public void setLastName(String lasName) {
+        this.lastName = lasName;
     }
 
     // Método publico que retorna uma String, a qual recebe o nome da classe e o valor que esta armazenado no atributo

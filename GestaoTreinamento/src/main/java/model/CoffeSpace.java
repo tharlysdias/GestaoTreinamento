@@ -8,17 +8,21 @@ public class CoffeSpace {
     
     // Atributo do espaço de café
     private int id;
-    private int idPessoa; // chave estrangeira
+    private int idPerson; // chave estrangeira
     private String name;
     private int capacity;
     
     
-    // Criando construtor
-    public CoffeSpace(int id, int idPessoa, String name, int capacity) {
+    // Criando construtores
+    public CoffeSpace(int id, int idPerson, String name, int capacity) {
         this.id = id;
-        this.idPessoa = idPessoa;
+        this.idPerson = idPerson;
         this.name = name;
         this.capacity = capacity;
+    }
+    
+    public CoffeSpace() {
+        
     }
     
     
@@ -31,12 +35,12 @@ public class CoffeSpace {
         this.id = id;
     }
 
-    public int getIdPessoa() {
-        return idPessoa;
+    public int getIdPerson() {
+        return idPerson;
     }
 
-    public void setIdPessoa(int idPessoa) {
-        this.idPessoa = idPessoa;
+    public void setIdPerson(int idPerson) {
+        this.idPerson = idPerson;
     }
 
     public String getName() {
